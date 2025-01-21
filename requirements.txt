@@ -1,0 +1,15 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+scikit-learn
+hdbscan
+umap-learn
+soundfile
+librosa
+torch
+torchvision
+torchaudio
+gradio
+progress_table
