@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
 # Charger les features extraites
-features_file = "features.csv"
+features_file = "results/features.csv"
 df = pd.read_csv(features_file)
 
 # Supprimer la colonne "file" et normaliser les données
@@ -43,5 +43,5 @@ plt.colorbar(label="Cluster ID")
 plt.show()
 
 # Sauvegarder les résultats des clusters
-df.to_csv("clustered_features.csv", index=False)
-print("Clustering terminé. Résultats sauvegardés dans clustered_features.csv")
+df.to_csv("results/clustered_features.csv", index=False)
+print("Clustering terminé. Résultats sauvegardés dans results/clustered_features.csv")

@@ -37,7 +37,7 @@ for i, script in enumerate(scripts):
     table.update("Statut", "⏳ En cours...", row=i)
 
     # Exécuter le script
-    os.system(f"python {script}")
+    os.system(f"python scripts/{script}")
     
     # Mise à jour du statut
     table.update("Statut", "✅ Terminé", row=i)

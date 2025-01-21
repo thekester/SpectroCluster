@@ -4,7 +4,7 @@ import soundfile as sf
 import matplotlib.pyplot as plt
 
 # Dossier contenant les signaux générés
-data_folder = "synthetic_signals"
+data_folder = "data/synthetic_signals"
 files = sorted(os.listdir(data_folder))  # Trier les fichiers pour les charger dans l'ordre
 
 # Charger un fichier WAV
