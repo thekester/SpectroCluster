@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Charger les features
-df = pd.read_csv("features.csv")
+df = pd.read_csv("results/features.csv")
 X = df.drop(columns=["file"])
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
@@ -30,4 +30,4 @@ plt.colorbar(label="Cluster ID")
 plt.show()
 
 # Sauvegarde des résultats
-df.to_csv("hdbscan_clusters.csv", index=False)
+df.to_csv("results/hdbscan_clusters.csv", index=False)

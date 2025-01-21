@@ -8,7 +8,7 @@ from progress_table import ProgressTable
 sample_rate = 2000      # en Hz (> 1 kHz comme spécifié)
 duration = 5.0          # durée de chaque signal en secondes
 num_signals = 10        # nombre de signaux à générer
-output_folder = "synthetic_signals"
+output_folder = "data/synthetic_signals"
 
 # Créer le dossier de sortie s'il n'existe pas
 os.makedirs(output_folder, exist_ok=True)

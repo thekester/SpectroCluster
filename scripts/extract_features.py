@@ -7,7 +7,7 @@ from scipy.signal import welch
 import pandas as pd
 
 # Dossier contenant les signaux générés
-data_folder = "synthetic_signals"
+data_folder = "data/synthetic_signals"
 files = sorted(os.listdir(data_folder))  # Trier les fichiers
 
 # Charger un fichier WAV
@@ -57,6 +57,6 @@ for file_name in files:
 df_features = pd.DataFrame(features_list)
 
 # Sauvegarder dans un fichier CSV
-output_csv = "features.csv"
+output_csv = "results/features.csv"
 df_features.to_csv(output_csv, index=False)
 print(f"Extraction terminée. Features sauvegardées dans {output_csv}")

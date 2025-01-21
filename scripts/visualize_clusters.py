@@ -5,8 +5,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("clustered_features.csv")
-data_folder = "synthetic_signals"
+df = pd.read_csv("results/clustered_features.csv")
+data_folder = "data/synthetic_signals"
 
 def plot_signal(file_name):
     file_path = os.path.join(data_folder, file_name)
